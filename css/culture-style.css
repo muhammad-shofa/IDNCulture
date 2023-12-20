@@ -1,0 +1,258 @@
+@import url(./style.css);
+
+nav span {
+  color: var(--primary);
+}
+
+nav ul li a {
+  color: var(--black-accent);
+}
+
+.line-y-lang {
+  background-color: var(--black-accent);
+}
+
+/* Style the tab */
+
+.container-side {
+  width: max-content;
+  height: max-content;
+}
+
+.tab {
+  border: 1px solid var(--chinese-silver-accent);
+  background-color: var(--secondary);
+  width: 15%;
+  height: 100vh;
+  overflow: scroll;
+  padding-top: 80px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  transition: all 0.3s ease-in-out;
+}
+
+.tab::-webkit-scrollbar {
+  display: none;
+}
+
+/* toggle style side bar */
+.hidden-side-bar {
+  margin-left: -15%;
+}
+
+.container-side:hover .all-arrow {
+  opacity: 1;
+}
+
+/* arrow side bar */
+
+.all-arrow {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  margin-left: 14%;
+  margin-top: 50vh;
+  background-color: var(--secondary);
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.in-left {
+  margin-left: -0.8%;
+}
+
+/* toggle style arrow */
+
+.show-arrow-left {
+  display: block;
+}
+
+.hidden-arrow-left {
+  display: none;
+}
+
+.show-arrow-right {
+  display: block;
+}
+
+.hidden-arrow-right {
+  display: none;
+}
+
+.all-arrow:hover {
+  cursor: pointer;
+}
+
+.all-arrow img {
+  width: 25px;
+  height: 25px;
+}
+
+.tab span {
+  width: auto;
+  height: auto;
+  font-size: var(--font-size-dekstop-heading-2);
+  margin-left: 10px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: var(--black-accent);
+  font-size: 15px;
+  padding: 18px 12px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tab button:hover {
+  background-color: var(--gainsboro-accent);
+}
+
+.tab button.active {
+  background-color: var(--chinese-silver-accent);
+}
+
+/* content culture */
+.container-content-culture {
+  width: 85%;
+  height: 300px;
+  margin-left: 15%;
+  transition: all 0.3s ease-in-out;
+}
+
+.container-content-culture img {
+  width: 100%;
+  margin-top: 40px;
+  margin-right: 20px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.container-content-culture p {
+  margin-top: 20px;
+  text-align: start;
+}
+
+/* toggle style content culture */
+.max-container-content-culture {
+  width: 100%;
+  margin-left: 0%;
+}
+
+.tabcontent {
+  display: none;
+}
+
+#batikJawa {
+  display: block;
+}
+
+.container-explore {
+  width: 100%;
+  height: max-content;
+  background-color: var(--secondary);
+}
+
+.explore {
+  max-width: 1200px;
+  min-height: 700px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+.text-explore {
+  max-width: 1200px;
+  color: var(--black-accent);
+  text-align: center;
+  margin: auto;
+}
+
+.text-explore h1 {
+  color: var(--primary);
+}
+
+/* media query tablet */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    z-index: 2;
+  }
+
+  .line {
+    background-color: var(--black-accent);
+  }
+
+  .hidden-ul-culture {
+    width: 120%;
+    min-height: 100vh;
+    overflow-y: scroll;
+    display: block;
+    position: fixed;
+    top: 65px;
+    right: -1000px;
+    padding: 50px 0;
+    text-align: center;
+    color: var(--black-accent);
+    background-color: var(--secondary);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .show-ul-culture {
+    width: 120%;
+    min-height: 100vh;
+    overflow-y: scroll;
+    display: block;
+    position: fixed;
+    top: 65px;
+    right: -30px;
+    margin-right: 0;
+    padding: 50px 0px;
+    text-align: center;
+    color: var(--black-accent);
+    background-color: var(--secondary);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sticky .hidden-ul-culture {
+    width: 120%;
+    min-height: 100vh;
+    overflow-y: scroll;
+    display: block;
+    position: fixed;
+    top: 65px;
+    padding: 50px 0;
+    right: -1000px;
+    text-align: center;
+    color: var(--black-accent);
+    background-color: var(--secondary);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sticky .show-ul-culture {
+    width: 120%;
+    height: 100vh;
+    overflow-y: scroll;
+    display: block;
+    position: fixed;
+    top: 65px;
+    right: -30px;
+    padding: 50px 0px;
+    margin-right: 0;
+    text-align: center;
+    color: var(--black-accent);
+    background-color: var(--secondary);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .tab span {
+    font-size: 18px;
+  }
+}

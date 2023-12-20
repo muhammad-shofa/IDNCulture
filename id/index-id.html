@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="IDNCulture." />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>IDNCulture</title>
+  </head>
+  <body>
+    <!-- loading -->
+    <div class="container-loading" id="loading">
+      <div class="loading-content">
+        <div class="spinner-load"></div>
+      </div>
+    </div>
+    <!-- all content -->
+    <div class="all-content" id="all-content">
+      <!-- navbar -->
+      <div class="container-nav" id="container-nav">
+        <nav>
+          <a href="./index.html#home">
+            <span>IDNCulture</span>
+          </a>
+          <ul class="hidden-ul" id="nav-ul">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li id="trigger-dropdown-culture" onmouseover="showDropDown()">
+              <a id="text-culture" href="#culture"
+                >Culture
+                <img
+                  id="trigger-dropdown-culture-t-h"
+                  src="../assets/icon/chevron-down-solid.svg"
+                  alt=""
+                />
+                <!-- dropdown tablet dan hp -->
+                <div id="dropdown-t-h" class="container-dropdown-t-h">
+                  <div class="content-dropdown-t-h">
+                    <ul>
+                      <li><a href="#0">Jawa</a></li>
+                      <li><a href="#0">Kalimantan</a></li>
+                      <li><a href="#0">Sumatera</a></li>
+                      <li><a href="#0">Sulawesi</a></li>
+                      <li><a href="#0">Papua</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#explore">Explore </a>
+            </li>
+            <li>
+              <a href="#blog">Blog</a>
+            </li>
+            <li>
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="change-lang">
+            <a href="./id/index-id.html" class="lang-active">
+              <img
+                class="lang-id"
+                src="../assets/images/lang-id.jpg"
+                alt="lang id"
+              />
+            </a>
+            <div class="line-y-lang"></div>
+            <a href="../index.html">
+              <img
+                class="lang-en"
+                src="../assets/images/lang-en.jpg"
+                alt="lang en"
+              />
+            </a>
+          </div>
+          <div class="menu-icon" id="menu-icon">
+            <span class="line" id="line-1"></span>
+            <span class="line" id="line-2"></span>
+            <span class="line" id="line-3"></span>
+          </div>
+        </nav>
+      </div>
+      <!-- content dropdown -->
+      <div class="container-dropdown" id="container-dropdown">
+        <div class="dropdown">
+          <div class="jawa">
+            <h2>Jawa</h2>
+            <ul>
+              <li>
+                <a href="#0">Batik</a>
+                <!-- pakaian adat -->
+              </li>
+              <li>
+                <a href="#0">Gamelan</a>
+                <!-- alat musik -->
+              </li>
+              <li>
+                <a href="#0">Keris</a>
+                <!-- senjata tradisional -->
+              </li>
+              <li>
+                <a href="#0">Nasi Liwet</a>
+                <!-- makanan khas -->
+              </li>
+              <li>
+                <a href="#0">Wayang Kulit</a>
+                <!-- kesenian -->
+              </li>
+            </ul>
+          </div>
+          <div class="kalimantan">
+            <h2>Kalimantan</h2>
+            <ul>
+              <li>
+                <a href="#0">King baba</a>
+                <!-- pakaian adat -->
+              </li>
+              <li>
+                <a href="#0">Sape</a>
+                <!-- alat musik -->
+              </li>
+              <li>
+                <a href="#0">Mandau</a>
+                <!-- senjata tradisional -->
+              </li>
+              <li>
+                <a href="#0">Asam Pedas</a>
+                <!-- makanan khas -->
+              </li>
+              <li>
+                <a href="#0">Tari Zapin</a>
+                <!-- kesenian -->
+              </li>
+            </ul>
+          </div>
+          <div class="sumatra">
+            <h2>Sumatera</h2>
+            <ul>
+              <li>
+                <a href="#0">Minangkabau</a>
+                <!-- pakaian adat -->
+              </li>
+              <li>
+                <a href="#0">Gendang</a>
+                <!-- alat musik -->
+              </li>
+              <li>
+                <a href="#0">Klewang</a>
+                <!-- senjata tradisional -->
+              </li>
+              <li>
+                <a href="#0">Rendang</a>
+                <!-- makanan khas -->
+              </li>
+              <li>
+                <a href="#0">Randai</a>
+                <!-- kesenian -->
+              </li>
+            </ul>
+          </div>
+          <div class="sulawesi">
+            <h2>Sulawesi</h2>
+            <ul>
+              <li>
+                <a href="#0">Mappettong</a>
+                <!-- pakaian adat -->
+              </li>
+              <li>
+                <a href="#0">Kolintang</a>
+                <!-- alat musik -->
+              </li>
+              <li>
+                <a href="#0">Panabas</a>
+                <!-- senjata tradisional -->
+              </li>
+              <li>
+                <a href="#0">Konro</a>
+                <!-- makanan khas -->
+              </li>
+              <li>
+                <a href="#0">Tari Tor-Tor</a>
+                <!-- kesenian -->
+              </li>
+            </ul>
+          </div>
+          <div class="papua">
+            <h2>Papua</h2>
+            <ul>
+              <li>
+                <a href="#0">Koteka</a>
+                <!-- pakaian adat -->
+              </li>
+              <li>
+                <a href="#0">Tifa</a>
+                <!-- alat musik -->
+              </li>
+              <li>
+                <a href="#0">Kombia Axe</a>
+                <!-- senjata tradisional -->
+              </li>
+              <li>
+                <a href="#0">Papeda</a>
+                <!-- makanan khas -->
+              </li>
+              <li>
+                <a href="#0">Baliem Valley</a>
+                <!-- kesenian -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- hero -->
+      <div class="container-hero">
+        <section class="hero" id="home">
+          <div class="text-hero">
+            <div>
+              <h1>
+                Selamat datang di Jelajah Digital Kekayaan
+                <b>Budaya Indonesia</b>
+              </h1>
+              <p>
+                Selamat datang di tempat di mana teknologi bertemu dengan
+                tradisi, dan eksplorasi budaya tanpa batas.
+              </p>
+              <div>
+                <a href="#culture">
+                  <button>Pergi Jelajahi</button>
+                </a>
+                <a href="#contact">
+                  <button class="hero-contact-btn">Kontak</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- culture -->
+      <div class="container-culture">
+        <section class="culture" id="culture">
+          <div class="all-img-culture">
+            <div class="culture-batik">
+              <div class="border-img-culture"></div>
+              <img src="../assets/images/batik.jpg" alt="batik" />
+            </div>
+            <div class="culture-wayang">
+              <div class="border-img-culture-wayang"></div>
+              <img src="../assets/images/wayang.jpg" alt="wayang" />
+            </div>
+            <div class="culture-kecak">
+              <div class="border-img-culture"></div>
+              <img src="../assets/images/kecak.jpg" alt="kecak" />
+            </div>
+          </div>
+          <div class="text-culture">
+            <h1>About <b>Indonesia</b></h1>
+            <p>
+              Indonesia, negara kepulauan yang luas di Asia Tenggara, memiliki
+              permadani budaya yang kaya dan beragam yang dibentuk oleh lebih
+              dari 300 kelompok etnis. Lanskap budaya negara ini ditandai dengan
+              perpaduan yang harmonis antara tradisi, bahasa, dan adat istiadat,
+              dengan pengaruh utama dari Islam di samping semangat toleransi
+              beragama.
+              <br /><br />
+              Kesenian tradisional seperti wayang kulit dan kerajinan batik,
+              serta tarian dan musik khas daerah, turut menyemarakkan warisan
+              budaya bangsa ini.<br /><br />
+              Upacara-upacara yang menandai peristiwa-peristiwa penting dalam
+              kehidupan, masakan beraroma rempah-rempah, dan rasa kebersamaan
+              yang mendalam melalui nilai-nilai seperti "gotong royong" semakin
+              mendefinisikan budaya Indonesia.
+              <br /><br />
+              Arsitektur tradisional negara ini, yang berakar pada desain asli
+              dengan pengaruh dari luar, dan lanskap alamnya yang menakjubkan,
+              termasuk hutan hujan tropis dan pantai-pantai yang indah,
+              melengkapi pengaruh modern yang terlihat pada kreativitas dan
+              inovasi perkotaan. Memahami dan merangkul keragaman budaya ini
+              adalah kunci untuk menghargai kekayaan Indonesia.
+            </p>
+            <a class="more-culture-btn" href="../id/culture-id.html">
+              <button>Lihat Kebudayaan</button>
+            </a>
+          </div>
+        </section>
+      </div>
+      <!-- explore -->
+      <div class="container-explore">
+        <section class="explore" id="explore">
+          <div class="text-explore">
+            <h1><b>Wisata Budaya</b> di Ujung Jari Anda</h1>
+            <p>
+              Dari situs bersejarah hingga pusat seni kontemporer, kami
+              mengundang Anda untuk membenamkan diri Anda dalam pesona budaya
+              Indonesia. destinasi wisata Indonesia. Dengan panduan interaktif
+              dan pengalaman virtual, setiap penjelajahan akan menjadi
+              perjalanan yang tak terlupakan.
+            </p>
+          </div>
+          <div class="all-card-explore">
+            <div class="card-explore">
+              <div class="zoom-effect-explore">
+                <img src="../assets/images/bali.jpg" alt="explore 1" />
+              </div>
+              <h2>Bali</h2>
+              <p>
+                Bali bukan hanya tentang keindahan alamnya, pulau ini juga penuh
+                dengan keanekaragaman budaya dan spiritualitas.
+              </p>
+              <button class="read-more-btn">Baca lebih lanjut</button>
+            </div>
+            <div class="card-explore">
+              <div class="zoom-effect-explore">
+                <img src="../assets/images/bromo.jpg" alt="explore 2" />
+              </div>
+              <h2>Bromo</h2>
+              <p>
+                Rasakan keajaiban alam di Gunung Bromo, salah satu destinasi
+                paling ikonik di Indonesia.
+              </p>
+              <button class="read-more-btn">Baca lebih lanjut</button>
+            </div>
+            <div class="card-explore">
+              <div class="zoom-effect-explore">
+                <img src="../assets/images/borobudur.jpg" alt="explore 3" />
+              </div>
+              <h2>Borobudur</h2>
+              <p>
+                kompleks candi Buddha yang megah, menjadi saksi kekayaan budaya
+                Indonesia.
+              </p>
+              <button class="read-more-btn">Baca lebih lanjut</button>
+            </div>
+          </div>
+          <a class="explore-btn" href="#0">
+            <button>Jelajahi</button>
+          </a>
+        </section>
+      </div>
+      <!-- wonderland -->
+      <div class="container-wonderland">
+        <section class="wonderland">
+          <div class="text-wonderland">
+            <h1>Indonesia Is A Wonderland</h1>
+            <p>
+              Indonesia adalah negeri ajaib yang tidak hanya memukau dengan
+              keindahan alamnya, tetapi juga memancarkan keberagaman budaya dan
+              kedalaman spiritualitas.
+            </p>
+          </div>
+          <div class="container-video-wonderland">
+            <div class="video-wonderland">
+              <iframe
+                src="https://www.youtube.com/embed/aKtb7Y3qOck?si=JaY_4oFOBfQ7mH8w&amp;controls=0"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- blog -->
+      <div class="container-blog">
+        <section class="blog" id="blog">
+          <div class="text-blog">
+            <h1>Berita terbaru tentang budaya Indonesia</h1>
+            <p>Cari tahu lebih banyak berita tentang budaya di Indonesia.</p>
+          </div>
+          <div class="splide" aria-labelledby="carousel-heading">
+            <div class="title-hot-news">
+              <h2>Berita Populer Hari Ini</h2>
+              <img src="../assets/icon/fire-solid.svg" alt="fire icon" />
+            </div>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="../assets/images/blog/blog-1.jpg" alt="" />
+                  <div class="text-card-blog">
+                    <p>1 menit yang lalu</p>
+                    <h2>
+                      Desain Interior Ruang Kerja Ini Memadukan Nuansa Modern
+                      dan Budaya Indonesia
+                    </h2>
+                    <p>
+                      Desain interior ruang kerja ini memukau dengan harmoni
+                      sempurna antara nuansa modern dan kekayaan budaya
+                      Indonesia. Setiap elemen dirancang untuk menciptakan
+                      lingkungan yang inspiratif, memadukan elemen-elemen
+                      kontemporer dengan sentuhan tradisional yang khas. Sebuah
+                      inovasi desain yang tidak hanya mencerminkan keindahan
+                      estetika modern, tetapi juga menghormati dan memperkaya
+                      warisan budaya Indonesia dalam ruang kerja yang fungsional
+                      dan penuh gaya.
+                    </p>
+                  </div>
+                  <div class="blog-read-more-hot">
+                    <a href="#0">Baca lebih lanjut</a>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <img src="../assets/images/blog/blog-2.jpg" alt="" />
+                  <div class="text-card-blog">
+                    <p>5 menit yang lalu</p>
+                    <h2>Rekomendasi kopi terbaik di Yogyakarta</h2>
+                    <p>
+                      Yogyakarta, kota budaya yang kaya sejarah, juga merupakan
+                      tempat bagi para pecinta kopi untuk menikmati sajian kopi
+                      yang luar biasa. Berikut adalah beberapa rekomendasi
+                      tempat kopi terbaik di Yogyakarta yang akan memanjakan
+                      lidah Anda dan memberikan pengalaman kopi yang tak
+                      terlupakan.
+                    </p>
+                  </div>
+                  <div class="blog-read-more-hot">
+                    <a href="#0">Baca lebih lanjut</a>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <img src="../assets/images/blog/blog-3.jpg" alt="" />
+                  <div class="text-card-blog">
+                    <p>1 jam yang lalu</p>
+                    <h2>25+ Tempat wisata terbaru di Indonesia</h2>
+                    <p>
+                      Indonesia terus menggoda para pelancong dengan
+                      destinasi-destinasi wisata terbaru yang memikat hati. Dari
+                      pantai-pantai eksotis hingga hutan-hutan yang menakjubkan,
+                      berikut adalah beberapa tempat wisata terbaru di Indonesia
+                      yang patut Anda kunjungi untuk merasakan pesona keindahan
+                      alam dan budaya.
+                    </p>
+                  </div>
+                  <div class="blog-read-more-hot">
+                    <a href="#0">Baca lebih lanjut</a>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <img src="../assets/images/blog/blog-4.jpg" alt="" />
+                  <div class="text-card-blog">
+                    <p>48 menit yang lalu</p>
+                    <h2>5 Rekomendasi tempat berkemah di Indonesia</h2>
+                    <p>
+                      "5 Tempat Berkemah yang Direkomendasikan." Lepaskan diri
+                      dari hiruk pikuk kehidupan kota saat Anda membenamkan diri
+                      dalam ketenangan di lokasi-lokasi yang memukau ini.
+                    </p>
+                  </div>
+                  <div class="blog-read-more-hot">
+                    <a href="#0">Baca lebih lanjut</a>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <img src="../assets/images/blog/blog-5.webp" alt="" />
+                  <div class="text-card-blog">
+                    <p>3 jam yang lalu</p>
+                    <h2>Lukisan bersejarah Indonesia</h2>
+                    <p>
+                      Indonesia memiliki sejarah seni lukis yang kaya, yang
+                      merefleksikan perjalanan dan perkembangan masyarakatnya.
+                      Dari lukisan-lukisan klasik hingga karya kontemporer,
+                      setiap goresan kuas menciptakan narasi visual yang
+                      merepresentasikan berbagai aspek sejarah, budaya, dan
+                      perubahan dalam perjalanan panjang Indonesia. Inilah
+                      keindahan seni lukis yang menjadi saksi bisu akan berbagai
+                      peristiwa dan transformasi di negeri ini.
+                    </p>
+                  </div>
+                  <div class="blog-read-more-hot">
+                    <a href="#0">Baca lebih lanjut</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="latest-news">
+            <div class="title-latest-news">
+              <h2>Latest News</h2>
+              <img src="../assets/icon/newspaper-regular.svg" alt="news icon" />
+            </div>
+            <div class="all-card-news">
+              <div class="card-news">
+                <div class="zoom-effect-news">
+                  <img src="../assets/images/blog/blog-1.jpg" alt="blog 1" />
+                </div>
+                <div class="text-latest-card-news">
+                  <p class="news-date">12/22/2023</p>
+                  <h3>
+                    <a href="#0">
+                      Desain Interior Ruang Kerja Ini Memadukan Nuansa Modern
+                      dan Budaya Indonesia
+                    </a>
+                  </h3>
+                  <p>
+                    Desain interior ruang kerja ini memukau dengan harmoni
+                    sempurna antara nuansa modern dan kekayaan budaya Indonesia.
+                  </p>
+                </div>
+              </div>
+              <div class="card-news">
+                <div class="zoom-effect-news">
+                  <img src="../assets/images/blog/blog-4.jpg" alt="blog 4" />
+                </div>
+                <div class="text-latest-card-news">
+                  <p class="news-date">12/22/2023</p>
+                  <h3>
+                    <a href="#0">5 Rekomendasi tempat berkemah di Indonesia</a>
+                  </h3>
+                  <p>
+                    "5 Tempat Berkemah yang Direkomendasikan." Lepaskan diri
+                    dari hiruk pikuk kehidupan kota saat Anda membenamkan diri
+                    dalam ketenangan di lokasi-lokasi yang memukau ini.
+                  </p>
+                </div>
+              </div>
+              <div class="card-news">
+                <div class="zoom-effect-news">
+                  <img src="../assets/images/blog/blog-3.jpg" alt="blog 3" />
+                </div>
+                <div class="text-latest-card-news">
+                  <p class="news-date">12/22/2023</p>
+                  <h3>
+                    <a href="#0">25+ Tempat wisata terabru di Indonesia</a>
+                  </h3>
+                  <p>
+                    Indonesia terus menggoda para pelancong dengan
+                    destinasi-destinasi wisata terbaru yang memikat hati.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- gallery -->
+      <div class="container-gallery">
+        <section class="gallery" id="gallery">
+          <div class="text-gallery">
+            <h1>Galeri kebudayaan indonesia</h1>
+            <p>Sekilas tentang Galeri Budaya Indonesia</p>
+          </div>
+          <div class="container-img-gallery">
+            <div class="main">
+              <div class="zoom-effect-gallery">
+                <img src="../assets/images/wayang-kulit.webp" alt="" />
+              </div>
+            </div>
+            <div class="main-2">
+              <div class="zoom-effect-gallery">
+                <img
+                  src="../assets/images/cultures/sulawesi/sulawesi-rumah-tongkonan.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="img-1">
+              <div class="zoom-effect-gallery">
+                <img
+                  src="../assets/images/cultures/papua/papua-tari-sajojo.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="img-2">
+              <div class="zoom-effect-gallery">
+                <img
+                  src="../assets/images/cultures/kalimantan/kalimantan-kegiatan-nondoi.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="img-3">
+              <div class="zoom-effect-gallery">
+                <img
+                  src="../assets/images/cultures/jawa/batik-bojonegoro.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="img-4">
+              <div class="zoom-effect-gallery">
+                <img
+                  src="../assets/images/cultures/sulawesi/sulawesi-rumah-bugis.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="img-5">
+              <div class="zoom-effect-gallery">
+                <img
+                  src="../assets/images/cultures/sumatera/sumatera-batik-bodatmarsihutuan.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="img-6">
+              <div class="zoom-effect-gallery">
+                <img
+                  src="../assets/images/cultures/jawa/batik-bojonegoro.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="img-7">
+              <div class="zoom-effect-gallery">
+                <img
+                  src="../assets/images/cultures/jawa/kegiatan-wetonan-jawatengah.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- contact -->
+      <div class="container-contact">
+        <section class="contact" id="contact">
+          <div class="bg-contact">
+            <h2>Kontak Kami</h2>
+            <p>
+              Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan,
+              saran, atau ingin berkolaborasi. <b>Kami siap membantu Anda.</b>
+            </p>
+          </div>
+          <!-- form -->
+          <form class="form">
+            <div class="f-l-name">
+              <input type="text" placeholder="Nama depan" />
+              <input type="text" placeholder="Nama belakang" />
+            </div>
+            <select name="region" id="region">
+              <option value="Indonesia">Indonesia</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="Philippines">Philippines</option>
+              <option value="Singapure">Singapure</option>
+              <option value="Thailand">Thailand</option>
+              <option value="other">Other</option>
+            </select>
+            <input type="number" placeholder="Nomor" />
+            <input type="email" placeholder="Email anda" />
+            <textarea
+              name="message"
+              placeholder="Ketik Pesan Anda di sini"
+            ></textarea>
+            <button type="submit">Kirim Pesan</button>
+          </form>
+        </section>
+      </div>
+
+      <!-- footer -->
+      <div class="container-footer">
+        <footer>
+          <div class="subscribe">
+            <div class="text-subscribe">
+              <h2>Berlangganan newsletter kami</h2>
+              <p>Tetap up to date dengan berita dan artikel IDNCulture</p>
+            </div>
+            <div class="your-email">
+              <input type="text" placeholder="Email anda" />
+              <button>Daftar</button>
+            </div>
+          </div>
+          <div class="about-idnculture">
+            <h3>IDNCulture</h3>
+            <p>
+              Indonesia, negara kepulauan yang luas di Asia Tenggara, memiliki
+              permadani budaya yang kaya dan beragam yang dibentuk oleh lebih
+              dari 300 kelompok etnis. Lanskap budaya negara ini ditandai dengan
+              perpaduan yang harmonis antara tradisi, bahasa, dan adat istiadat,
+              dengan pengaruh utama dari Islam di samping semangat toleransi
+              beragama.
+            </p>
+          </div>
+          <div class="navigation">
+            <h3>Navigasi</h3>
+            <ul>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#culture">Culture</a>
+              </li>
+              <li>
+                <a href="#explore">Explore </a>
+              </li>
+              <li>
+                <a href="#blog">Blog</a>
+              </li>
+              <li>
+                <a href="#gallery">Gallery</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="blog-footer">
+            <h3>Berita</h3>
+            <ul>
+              <li><a href="#0">Populer</a></li>
+              <li><a href="#0">Terbaru</a></li>
+              <li><a href="#0">Kebudayaan</a></li>
+              <li><a href="#0">Destinasi</a></li>
+              <li><a href="#0">Makanan</a></li>
+            </ul>
+          </div>
+          <div class="support">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#0">FAQ</a></li>
+              <li><a href="#0">Privacy Policy</a></li>
+              <li><a href="#0">Terms and Conditions</a></li>
+              <li><a href="#0">hello@idnculture.com</a></li>
+            </ul>
+          </div>
+        </footer>
+        <!-- copyright -->
+        <hr />
+        <div class="copyright">
+          <p>
+            Copyright
+            <img
+              src="../assets/icon/copyright-regular.svg"
+              alt="copyright icon"
+            />
+            2023 IDNCulture All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- back to top -->
+    <a href="#home">
+      <div class="back-to-top" id="back-to-top">
+        <img src="../assets/icon/chevron-up-solid.svg" alt="back to top" />
+      </div>
+    </a>
+    <!-- js -->
+    <script src="../js/id.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide", {
+          type: "loop",
+        });
+        splide.mount();
+      });
+    </script>
+  </body>
+</html>
